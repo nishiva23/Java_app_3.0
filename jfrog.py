@@ -11,7 +11,7 @@ username = "admin"
 password = "2aeXiiTJBiBJE492x8RT"
 
 # Path to the JAR file you want to upload
-jar_file_path = "/home/ubuntu/Java_app_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
+jar_file_path = "/var/lib/jenkins/workspace/assignment2/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
 
 # Construct the URL for uploading the JAR file
 upload_url = f"{artifactory_url}{repository_path}{jar_file_path}"
