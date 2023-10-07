@@ -19,7 +19,7 @@ pipeline{
             steps{
             gitCheckout(
                 branch: "main",
-                url: "https://github.com/praveen1994dec/Java_app_3.0.git"
+                url: "https://github.com/nishiva23/Java_app_3.0.git"
             )
             }
         }
@@ -72,15 +72,15 @@ pipeline{
                }
             }
         }
-    //    stage('Push JFrog Image : Python'){
-    //     when { expression {  params.action == 'create' } }
-    //        steps{
-    //           script{
+        stage('Push JFrog Image : Python'){
+         when { expression {  params.action == 'create' } }
+            steps{
+               script{
                    
-    //               jfragpush()
-    //           }
-//        }
-//        }
+                   jfragpush()
+               }
+        }
+        }
         stage('Docker Image Build'){
          when { expression {  params.action == 'create' } }
             steps{
