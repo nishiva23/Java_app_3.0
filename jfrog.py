@@ -3,7 +3,7 @@
 import requests
 
 # Artifactory URL and repository path
-artifactory_url = "http://34.232.52.195:8082/artifactory/"
+artifactory_url = "http://100.26.230.195/:8082/artifactory/"
 repository_path = "example-repo-local/"
 
 # Credentials for authentication (if required)
